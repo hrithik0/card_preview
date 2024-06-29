@@ -1,0 +1,134 @@
+$button_color: rgb(253, 253, 112);
+$heading_color: rgb(255, 208, 0);
+$font_color: black;
+$card_color: white;
+
+$preview_image: url("../assets/images/illustration-article.svg");
+
+$profile_image: url("../assets/images/image-avatar.webp");
+
+@font-face {
+    font-family: Figtree-Italic;
+    src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: $button_color;
+    justify-content: center;
+    align-items: center;
+    font-family: Figtree;
+}
+
+.card {
+    border: 2px solid $font_color;
+    border-radius: 1em;
+    height: 34em;
+    max-width: 70%;
+    width: 25em;
+    background-color: $card_color;
+    padding: 1.3em;
+    box-shadow: 1em 1em;
+}
+
+.preview {
+    width: 100%;
+    height: 47%;
+    background-image: $preview_image;
+    border-radius: 0.7em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+}
+
+.buttom_section {
+    width: 100%;
+    height: 50%;
+}
+
+.profile {
+    width: 100%;
+    height: 3%;
+}
+
+.learn_button {
+    margin-top: 1em;
+    width: 100%;
+    height: 2em;
+}
+
+.learn_button>p {
+    background-color: $button_color;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    width: fit-content;
+    border-radius: 0.3em;
+}
+
+
+.publish_details {
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.heading {
+    width: 100%;
+    margin-top: 0.8em;
+    color: $font_color;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.description {
+    margin-top: 1em;
+    width: 100%;
+    color: grey;
+    font-size: 1.1em;
+}
+
+.profile {
+    margin-top: 1em;
+    width: 100%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+img {
+    width: 2em;
+    max-height: 100%;
+}
+
+.profile>p {
+    margin-left: 0.5em;
+}
+
+.heading:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+@media (max-width: 522px) {
+    .card {
+        height: 38em;
+    }
+}
