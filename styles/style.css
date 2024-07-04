@@ -116,9 +116,15 @@ img {
 
 @media (max-width: 522px) {
   body {
-    font-size: 0.9em;
+    font-size: 70%;
   }
   .card {
-    min-height: 35em;
+    min-height: 34em;
+  }
+  .heading {
+    margin-top: 0.3em;
+  }
+  .description {
+    margin-top: 0.4em;
   }
 }/*# sourceMappingURL=style.css.map */

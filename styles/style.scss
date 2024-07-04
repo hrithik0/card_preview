@@ -135,14 +135,25 @@ img {
     cursor: pointer;
 }
 
+
+@mixin margin-top($val: 1em){
+    margin-top: $val;
+}
 @media (max-width: 522px) {
     body{
         font: {
-            size: 0.9em;
+            size: 70%;
         }
     }
 
     .card{
-        min-height: 35em;
+        min-height: 34em;
+    }
+
+    .heading{
+        @include margin-top(0.3em);
+    }
+    .description{
+        @include margin-top(0.4em);
     }
 }
