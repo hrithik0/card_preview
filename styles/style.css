@@ -28,8 +28,8 @@ body {
 .card {
   border: 2px solid black;
   border-radius: 1em;
-  height: 34em;
   max-width: 70%;
+  min-height: 34em;
   width: 25em;
   background-color: white;
   padding: 1.3em;
@@ -45,9 +45,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.buttom_section {
+.bottom_section {
   width: 100%;
-  height: 50%;
 }
 
 .profile {
@@ -113,10 +112,4 @@ img {
 .heading:hover {
   color: orange;
   cursor: pointer;
-}
-
-@media (max-width: 522px) {
-  .card {
-    height: 38em;
-  }
 }/*# sourceMappingURL=style.css.map */
