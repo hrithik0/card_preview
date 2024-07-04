@@ -112,4 +112,13 @@ img {
 .heading:hover {
   color: orange;
   cursor: pointer;
+}
+
+@media (max-width: 522px) {
+  body {
+    font-size: 0.9em;
+  }
+  .card {
+    min-height: 35em;
+  }
 }/*# sourceMappingURL=style.css.map */

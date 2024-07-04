@@ -135,8 +135,14 @@ img {
     cursor: pointer;
 }
 
-// @media (max-width: 522px) {
-//     .card {
-//         height: 30em;
-//     }
-// }
+@media (max-width: 522px) {
+    body{
+        font: {
+            size: 0.9em;
+        }
+    }
+
+    .card{
+        min-height: 35em;
+    }
+}
